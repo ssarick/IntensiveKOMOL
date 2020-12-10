@@ -894,6 +894,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .section__header {
+    padding-bottom: 180px;
+  }
   .section__header__content__subtitle {
     margin: 10px auto;
     width: 80%;
@@ -1021,7 +1024,6 @@ body {
 
 .section__for .box__for {
   position: relative;
-  z-index: 5;
 }
 
 .section__for .box__for .elem_1 {
@@ -1625,6 +1627,9 @@ body {
     font-weight: 300;
     line-height: 22px;
   }
+  .section__intensive__wrapper__content__block__btn a {
+    margin: 0 auto;
+  }
 }
 
 .section__price {
@@ -1641,7 +1646,6 @@ body {
 
 .section__price .box__price {
   position: relative;
-  z-index: 5;
 }
 
 .section__price .box__price .elem_1 {
@@ -1922,7 +1926,6 @@ body {
 
 .section__about .box__about {
   position: relative;
-  z-index: 5;
 }
 
 .section__about .box__about .elem_1 {
