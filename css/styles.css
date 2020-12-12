@@ -433,7 +433,7 @@ body {
 
 .section__header .box__header .elem_8 {
   position: absolute;
-  top: 1600px;
+  top: 1550px;
   right: -180px;
 }
 
@@ -869,19 +869,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #F8F3EC;
+  background: url("../img/white-bg.png") top no-repeat;
+  background-size: contain;
   -webkit-box-shadow: inset 0px -2px 0px rgba(76, 81, 101, 0.2);
           box-shadow: inset 0px -2px 0px rgba(76, 81, 101, 0.2);
   border-radius: 20px;
-  -webkit-clip-path: polygon(100% 14%, 100% 51%, 100% 100%, 0% 100%, 0 53%, 0% 0%);
-          clip-path: polygon(100% 14%, 100% 51%, 100% 100%, 0% 100%, 0 53%, 0% 0%);
+  z-index: 10;
 }
 
 .section__header__content__problems__title {
   font-size: 42px;
   line-height: 128%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 100px;
   width: 70%;
   text-transform: uppercase;
   text-align: center;
@@ -897,6 +897,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 35px 40px;
+  background: #F8F3EC;
+  border-radius: 20px;
 }
 
 .section__header__content__problems__items__card {
@@ -1041,6 +1043,8 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
+    background: none;
+    border-radius: none;
   }
   .section__header__content__problems__items__card {
     width: 100%;
@@ -1150,6 +1154,8 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0;
+    background: none;
+    border-radius: none;
   }
   .section__header__content__problems__items__card {
     width: 48%;
@@ -1594,6 +1600,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section__intensive__wrapper__date {
@@ -1617,14 +1626,6 @@ body {
   width: 10px;
   height: 10%;
   border-radius: 0 0 0 5px;
-  position: relative;
-}
-
-.section__intensive__wrapper__date .progress-container .step::before {
-  position: absolute;
-  bottom: -12px;
-  left: -12px;
-  content: url("../img/Ellipse 154.png");
 }
 
 .section__intensive__wrapper__date .tabs {
@@ -1636,6 +1637,30 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 135px;
+}
+
+.section__intensive__wrapper__date .tabs li .dot {
+  position: relative;
+}
+
+.section__intensive__wrapper__date .tabs li .dot::before {
+  position: absolute;
+  content: url("../img/Group 45.png");
+  top: 15px;
+  right: -72px;
+  z-index: 999;
+}
+
+.section__intensive__wrapper__date .tabs li .dot-2 {
+  position: relative;
+}
+
+.section__intensive__wrapper__date .tabs li .dot-2::before {
+  position: absolute;
+  content: url("../img/Ellipse 154.png");
+  top: 15px;
+  right: -72px;
+  z-index: 999;
 }
 
 .section__intensive__wrapper__date .tabs li a {
@@ -1684,7 +1709,7 @@ body {
 }
 
 .section__intensive__wrapper__content {
-  width: auto;
+  width: 840px;
   margin-top: 50px;
 }
 
@@ -1750,7 +1775,6 @@ body {
 }
 
 .section__intensive__wrapper__content__block__list li {
-  font-weight: bold;
   margin: 10px 0;
   padding: 0 0 0 40px;
   position: relative;
@@ -1791,7 +1815,6 @@ body {
 .section__intensive__wrapper__content__block__box__card__ul li {
   list-style-position: inside;
   list-style: disc;
-  font-weight: bold;
   margin: 10px 0;
   padding: 0;
   position: relative;
@@ -1852,6 +1875,10 @@ body {
   .section__intensive__wrapper__date .tabs li {
     width: 50%;
   }
+  .section__intensive__wrapper__date .tabs li .dot::before,
+  .section__intensive__wrapper__date .tabs li .dot-2::before {
+    display: none;
+  }
   .section__intensive__wrapper__date .tabs li a {
     text-align: center;
     margin: 10px;
@@ -1874,6 +1901,9 @@ body {
   }
   .section__intensive__wrapper__date .tabs li a:hover::after {
     border-top-color: #fff;
+  }
+  .section__intensive__wrapper__content {
+    width: auto;
   }
   .section__intensive__wrapper__content__block__img-subtitle {
     display: -webkit-box;
@@ -1948,6 +1978,10 @@ body {
   .section__intensive__wrapper__date .tabs li {
     width: 50%;
   }
+  .section__intensive__wrapper__date .tabs li .dot::before,
+  .section__intensive__wrapper__date .tabs li .dot-2::before {
+    display: none;
+  }
   .section__intensive__wrapper__date .tabs li a {
     text-align: center;
     margin: 10px;
@@ -1970,6 +2004,9 @@ body {
   }
   .section__intensive__wrapper__date .tabs li a:hover::after {
     border-top-color: #fff;
+  }
+  .section__intensive__wrapper__content {
+    width: auto;
   }
   .section__intensive__wrapper__content__block__img-subtitle {
     display: -webkit-box;
@@ -2096,6 +2133,15 @@ body {
   position: relative;
 }
 
+.section__price__wrapper__card .crown {
+  position: absolute;
+  right: 0;
+}
+
+.section__price__wrapper__card .crown::before {
+  content: url("../img/klipartz 12.png");
+}
+
 .section__price__wrapper__card__title {
   text-align: center;
   text-transform: uppercase;
@@ -2126,6 +2172,10 @@ body {
 .section__price__wrapper__card__list {
   margin: 0 20px 50px 75px;
   font-size: 18px;
+}
+
+.section__price__wrapper__card__list ul {
+  font-weight: 300;
 }
 
 .section__price__wrapper__card__list ul li {
@@ -2224,6 +2274,14 @@ body {
             align-items: none;
     margin-bottom: 80px;
     position: relative;
+  }
+  .section__price__wrapper__card .crown {
+    position: absolute;
+    right: -35px;
+    top: -42px;
+  }
+  .section__price__wrapper__card .crown::before {
+    content: url("../img/klipartz 12.png");
   }
   .section__price__wrapper__card__title {
     margin: 30px;

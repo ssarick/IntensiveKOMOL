@@ -40,7 +40,20 @@ $(document).ready(function() {
 
     });
     $('.btn-swiper-4').click(function() {
-        $('.step').animate({ height: '98%' });
+        $('.step').animate({ height: '100%' });
 
     });
 });
+
+document.querySelector('#dot-1').onclick = function() {
+    document.querySelector('.btn-swiper-1').classList.add('dot-2');
+};
+document.querySelector('#dot-2').onclick = function() {
+    document.querySelector('.btn-swiper-2').classList.add('dot-2');
+}
+document.querySelector('#dot-3').onclick = function() {
+    document.querySelector('.btn-swiper-3').classList.add('dot-2');
+}
+document.querySelector('#dot-4').onclick = function() {
+    document.querySelector('.btn-swiper-4').classList.add('dot-2');
+}
